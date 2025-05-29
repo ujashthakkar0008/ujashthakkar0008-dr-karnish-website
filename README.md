@@ -1,1 +1,1 @@
-# ujashthakkar0008-dr-karnish-website
+# dr-karnish-website

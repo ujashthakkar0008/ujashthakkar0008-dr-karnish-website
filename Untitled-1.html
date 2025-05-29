@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Karnish Thakkar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0077cc;
+      --accent: #00aaff;
+      --bg: #f4f8fb;
+      --text-dark: #333;
+      --text-light: #fff;
+      --card-bg: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg);
+      color: var(--text-dark);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+        url('https://images.unsplash.com/photo-1588776814546-ecb5992f69f1?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 140px 20px 100px;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      background-color: var(--accent);
+      color: white;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .button:hover {
+      background-color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    .section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 2.8rem;
+      text-align: center;
+      margin-bottom: 40px;
+      color: var(--primary);
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .floating-contact {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: var(--accent);
+      color: white;
+      padding: 14px 20px;
+      border-radius: 40px;
+      font-size: 1rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+
+    .floating-contact:hover {
+      background-color: var(--primary);
+      transform: scale(1.05);
+    }
+
+    .testimonial {
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #444;
+      padding: 20px;
+      background: #fff;
+      border-left: 5px solid var(--accent);
+      border-radius: 10px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.5rem; }
+      header p { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <header data-aos="fade-down">
+    <h1>Dr. Karnish Thakkar</h1>
+    <p>Internal Medicine Specialist | Vadodara, Gujarat</p>
+    <button class="button" onclick="downloadResume()">Download Resume</button>
+  </header>
+
+  <section class="section" data-aos="fade-up">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>I am a passionate and dedicated medical professional with expertise in internal medicine, hospital management, and critical care. My goal is to deliver top-tier patient care through evidence-based medicine, compassionate service, and continuous professional growth.</p>
+    </div>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h2>Education</h2>
+    <div class="grid">
+      <div class="card">
+        <p><strong>MD General Medicine</strong> – Dhiraj Hospital, Sumandeep Vidyapeeth (2025)</p>
+      </div>
+      <div class="card">
+        <p><strong>MBBS</strong> – NHL Medical College, SVP Hospital, Gujarat University (2020)</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h2>Experience</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Senior Resident</strong> – Dhiraj Hospital (Feb 2025 – Present)
+          <ul>
+            <li>Managed inpatient and outpatient cases</li>
+            <li>Led ICU and emergency protocols</li>
+            <li>Supervised junior staff</li>
+          </ul>
+        </li>
+        <li><strong>Junior Resident</strong> – Dhiraj Hospital (Feb 2022 – Jan 2025)
+          <ul>
+            <li>Assisted with diagnosis and treatment</li>
+            <li>Gained critical care experience</li>
+          </ul>
+        </li>
+        <li><strong>Internship</strong> – SVP Hospital (Mar 2020 – Feb 2021)
+          <ul>
+            <li>Rotational departmental training</li>
+            <li>Supported patient care and evaluations</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" data-aos="zoom-in">
+    <h2>Testimonials</h2>
+    <div class="grid">
+      <div class="testimonial">“Dr. Karnish is incredibly professional, and his diagnosis saved my mother’s life. Forever grateful.” – Patient A</div>
+      <div class="testimonial">“His compassionate approach and clinical expertise make him one of the finest doctors in Vadodara.” – Dr. Patel</div>
+    </div>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>📍 Vadodara, Gujarat</p>
+      <p>📧 <a href="mailto:karnishthakkar@gmail.com">karnishthakkar@gmail.com</a></p>
+      <p>📞 +91-76006 20020</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dr. Karnish Thakkar. All rights reserved.</p>
+  </footer>
+
+  <div class="floating-contact" onclick="window.location='mailto:karnishthakkar@gmail.com'">
+    📬 Contact Me
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    function downloadResume() {
+      window.open('resume.pdf', '_blank'); // Replace with actual PDF path
+    }
+  </script>
+</body>
+</html>
